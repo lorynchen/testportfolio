@@ -1,0 +1,17 @@
+- name: "Boba Meets Bagel"
+  description: "Connecting Asians through a niche dating app."
+  tags: "UI/UX, research, branding"
+  file: "../projects/bmb.html"
+  img: "../assets/images/bmb/thumbnail-bmb.png"
+  
+- name: "Walmart Express Delivery"
+  description: "Providing a speedier delivery service to customers."
+  tags: "Work, UI/UX, research"
+  file: "../projects/walmart-express.html"
+  img: "../assets/images/walmart-express/thumbnail-express.png"
+  
+- name: "Walmart Split Orders"
+  description: "Requesting an additional driver for large deliveries."
+  tags: "Work, UI/UX, research"
+  file: "../projects/walmart-split.html"
+  img: "../assets/images/walmart-split/thumbnail-split.png"

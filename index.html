@@ -1,0 +1,43 @@
+---
+layout: "page"
+title: "Home"
+---
+
+<!-- HERO START -->
+        
+<div class="container grid-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+	<div class="columns">
+		<div class="column col-md-12 col-8">
+			<div class="hero">
+				<h1 class="red-text">Hey, I'm Loryn.</h1>
+				<h2>A Product Designer focused on visual and interaction design. Looking for my next opportunity!</h2>
+				<h4>Previously at <a href="https://www.walmartlabs.com/" target="_blank" title="Visit Walmart Lab's website">Walmart</a> working on the future of grocery.</h4>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% for project in site.data.projects %}
+	<div data-aos="zoom-out" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-delay="500">
+		<div class="work-card">
+			<a href="{{ project.file }}">
+				<div class="container grid-lg">
+					<div class="columns">
+						<div class="column col-md-12 col-8">
+							<img src="{{ project.img }}" class="img-responsive" alt="{{ project.name}} mockups">
+						</div>
+						<div class="column col-md-12 col-4">
+							<div class="xs-space"></div>
+							<h1>{{ project.name }}</h1>
+							<p>{{ project.description }}</p>
+							<p class="tags">{{ project.tags }}</p>
+							<p class="red-text">Read case study</p>
+						</div>
+					</div>
+
+				</div>
+			</a>
+		</div>
+	</div>	
+{% endfor %}
+<!-- HERO END -->

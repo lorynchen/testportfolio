@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+	{% include head.html %}
+	<body>
+		{% include nav.html %}
+		{{ content }}
+		{% if page.title == "404 Error" %}
+		{% else %}
+			{% include page-footer.html %}
+		{% endif %}
+		{% include body-script.html %}
+	</body>
+</html>

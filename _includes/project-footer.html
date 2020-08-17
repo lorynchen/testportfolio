@@ -1,0 +1,51 @@
+<div class="white-bg">
+	<div class="lg-space"></div>
+	<div class="container grid-lg">
+		<p class="subtitle">MORE CASE STUDIES</p>
+	</div>
+	{% for project in site.data.projects %}
+		{% if project.name == page.title %}
+		{% else %}
+			<div data-aos="zoom-out" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-delay="500">
+				<div class="work-card">
+					<a href="{{ project.file }}">
+						<div class="container grid-lg">
+							<div class="columns">
+								<div class="column col-md-12 col-8">
+									<img src="{{ project.img }}" class="img-responsive" alt="{{ project.name}} mockups">
+								</div>
+								<div class="column col-md-12 col-4">
+									<div class="xs-space"></div>
+									<h1>{{ project.name }}</h1>
+									<p>{{ project.description }}</p>
+									<p class="tags">{{ project.tags }}</p>
+									<p class="red-text">Read case study</p>
+								</div>
+							</div>
+
+						</div>
+					</a>
+				</div>
+			</div>	
+	{% endif %}
+	{% endfor %}
+
+
+	<!-- FOOTER START -->
+
+	<footer>
+		<div class="container grid-lg">
+			<p>
+			<a href="https://twitter.com/LoloLoryn" target="_blank" title="Tweet at me!">Twitter</a> &#9702; <a href="https://dribbble.com/lorynchen" target="_blank" title="Like one of my shots!">Dribbble</a> &#9702; <a href="https://medium.com/@lorynchen" target="_blank" title="Read one of my articles!">Medium</a> &#9702; <a href="https://www.linkedin.com/in/lorynchen/" target="_blank" title="Let's connect!">LinkedIn</a> &#9702; <a href="https://www.youtube.com/lorynchen" target="_blank" title="Watch my design videos!">YouTube</a>
+			</p>
+			<br>
+			<p class="gray-text hide-sm">&copy; 2020 Loryn Chen - Built with &hearts; by yours truly</p>
+			<div class="show-sm">
+				<p class="gray-text">Built with &hearts; by yours truly</p>
+				<p class="gray-text">&copy; 2020 Loryn Chen</p>
+			</div>
+		</div>
+	</footer>
+
+<!-- FOOTER END -->
+</div>
